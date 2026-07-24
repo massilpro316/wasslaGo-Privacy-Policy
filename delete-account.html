@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suppression de Compte - WasslaGo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4335DC;
+            --primary-light: #5f52eb;
+            --primary-bg: #eef2ff;
+            --bg: #fafafa;
+            --card-bg: #ffffff;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --border: #e5e7eb;
+            --danger: #ef4444;
+            --danger-bg: #fef2f2;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #5f52eb;
+                --primary-light: #7c72f7;
+                --primary-bg: #1e1b4b;
+                --bg: #0b0f19;
+                --card-bg: #111827;
+                --text-main: #f3f4f6;
+                --text-muted: #9ca3af;
+                --border: #1f2937;
+                --danger: #f87171;
+                --danger-bg: #450a0a;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: var(--card-bg);
+            padding: 48px;
+            border-radius: 24px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+
+        header {
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        .logo-text {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--text-main);
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 16px;
+        }
+
+        .warning-box {
+            background-color: var(--danger-bg);
+            border: 1px solid var(--danger);
+            color: var(--text-main);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 32px;
+            font-size: 15px;
+        }
+
+        .warning-box h3 {
+            color: var(--danger);
+            margin-bottom: 8px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 24px 0 12px 0;
+            color: var(--text-main);
+        }
+
+        p, li {
+            font-size: 15px;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        .method-card {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+
+        .method-title {
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 24px;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 14px;
+            margin-top: 12px;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-light);
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-text">WasslaGo</div>
+            <h1>Demande de Suppression de Compte et de Données</h1>
+            <p class="subtitle">Application : <strong>WasslaGo</strong> | Développeur : <strong>Ayyoub Kasmi</strong></p>
+            <p class="subtitle" style="margin-top: 8px;">Conforme aux directives d'effacement de données du Google Play Store.</p>
+        </header>
+
+        <div class="warning-box">
+            <h3>⚠️ Important : Action irréversible</h3>
+            <p>La suppression de votre compte WasslaGo est définitive. Une fois votre compte supprimé, vous perdrez définitivement l'accès à vos projets, vos historiques de traduction, vos messages et vos crédits éventuels.</p>
+        </div>
+
+        <h2>Comment demander la suppression de votre compte</h2>
+        <p>Vous disposez de deux méthodes simples pour demander la suppression de votre compte WasslaGo et de toutes les données associées :</p>
+
+        <div class="method-card">
+            <div class="method-title">Méthode 1 : Directement depuis l'application mobile WasslaGo (Recommandé)</div>
+            <ol>
+                <li>Ouvrez l'application <strong>WasslaGo</strong> sur votre téléphone.</li>
+                <li>Accédez à l'onglet <strong>Profil</strong> ou <strong>Paramètres</strong>.</li>
+                <li>Appuyez sur <strong>Supprimer le compte</strong>.</li>
+                <li>Confirmez votre choix. Votre compte sera instantanément désactivé et programmé pour suppression.</li>
+            </ol>
+        </div>
+
+        <div class="method-card">
+            <div class="method-title">Méthode 2 : Demande en ligne (Par e-mail)</div>
+            <p>Si vous n'avez plus accès à l'application mobile, vous pouvez demander la suppression en envoyant un e-mail à notre support à partir de l'adresse e-mail associée à votre compte WasslaGo :</p>
+            <p><strong>Destinataire :</strong> support@wasslago.com<br><strong>Objet :</strong> Demande de suppression de compte WasslaGo</p>
+            <a href="mailto:support@wasslago.com?subject=Demande de suppression de compte WasslaGo&body=Bonjour, je souhaite demander la suppression définitive de mon compte WasslaGo et de toutes mes données associées. Mon adresse e-mail est : " class="btn">Envoyer une demande par e-mail</a>
+        </div>
+
+        <h2>Quelles données sont supprimées ou conservées ?</h2>
+        
+        <h3>Données supprimées immédiatement et définitivement :</h3>
+        <ul>
+            <li>Vos informations d'identification (Nom, adresse e-mail, hachage du mot de passe).</li>
+            <li>Vos documents et fichiers importés pour la traduction.</li>
+            <li>Vos conversations et historiques de chat avec les traducteurs (Pusher).</li>
+            <li>Vos jetons d'identification et de push notification (Firebase Cloud Messaging).</li>
+        </ul>
+
+        <h3>Données conservées temporairement :</h3>
+        <ul>
+            <li><strong>Données financières et facturation :</strong> Les détails de vos transactions et factures de paiement (traitées via Chargily) sont conservés pendant la durée légale requise par les lois fiscales et commerciales algériennes (généralement 10 ans pour la comptabilité).</li>
+            <li><strong>Rapports de plantages anonymisés (Sentry & Firebase) :</strong> Conservés de manière totalement anonyme à des fins d'amélioration de la qualité de notre service.</li>
+        </ul>
+
+        <h2>Période de conservation et suppression automatique</h2>
+        <p><strong>Les données utilisateur sont-elles supprimées immédiatement ou après une période de conservation ?</strong></p>
+        <p><strong>Non</strong>, la suppression physique des données n'est pas instantanée au moment de la demande (afin d'éviter les pertes accidentelles et de finaliser les tâches en cours), mais <strong>les données utilisateur sont automatiquement et définitivement supprimées sous un délai de 90 jours</strong>.</p>
+
+        <h2>Délais de traitement</h2>
+        <p>Les demandes de suppression de compte (effectuées depuis l'application ou par e-mail) sont prises en compte sous 7 jours ouvrés. Une fois la demande validée, l'effacement complet de toutes les données associées de nos serveurs est réalisé automatiquement sous un délai maximum de 90 jours.</p>
+
+        <footer>
+            <p>© 2026 WasslaGo. Tous droits réservés.</p>
+            <p><a href="privacy-policy.html">Politique de Confidentialité</a> | <a href="https://www.wasslago.com">Site Web Principal</a></p>
+        </footer>
+    </div>
+</body>
+</html>
